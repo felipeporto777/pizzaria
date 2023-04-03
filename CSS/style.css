@@ -1,0 +1,140 @@
+/*resert css para tirar todas as margens dos elementos*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/*Estilização do header-cabeçalho*/
+
+.cabecalho {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cabecalho>img {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu>li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu>li>a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu>li:hover {
+    background-color: darkred;
+}
+
+.menu>li>a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+.banner {
+    background-image: url(../img/pizza.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner>h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 30px;
+}
+
+.botao-vazado {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.botao-vazado:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+.meio {
+    max-width: 1300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.sabor {
+    text-align: center;
+}
+
+hr {
+    height: 5px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 12%, rgba(255, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 88%);
+    border: none;
+}
+
+.sabor {
+    background-color: green;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.sabores {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagem-sabor {
+    border-radius: 8px;
+}
+
+.valor {
+    background-color: yellow;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 7px;
+    width: 95%;
+}
+
+.valor:hover {
+    background-color: black;
+    color: white;
+}
